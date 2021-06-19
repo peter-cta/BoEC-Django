@@ -153,7 +153,7 @@
                 </div>
               </div>
               <div class="stripe-form-row">
-                <button id="stripeBtn">Submit Payment</button>
+                <button id="stripeBtn" type="submit">Submit Payment</button>
               </div>
               <div class="stripe-form-row">
                 <div class="custom-control custom-checkbox">
@@ -210,15 +210,15 @@
   // Add an instance of the card Element into the `card-element` <div>.
   card.mount('#card-element');
 
-  // Handle real-time validation errors from the card Element.
-  card.addEventListener('change', function (event) {
-    var displayError = document.getElementById('card-errors');
-    if (event.error) {
-      displayError.textContent = event.error.message;
-    } else {
-      displayError.textContent = '';
-    }
-  });
+  Handle real - time validation errors from the card Element.
+    card.addEventListener('change', function (event) {
+      var displayError = document.getElementById('card-errors');
+      if (event.error) {
+        displayError.textContent = event.error.message;
+      } else {
+        displayError.textContent = '';
+      }
+    });
 
   // Handle form submission.
   var form = document.getElementById('stripe-form');

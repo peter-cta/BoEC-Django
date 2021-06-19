@@ -6,6 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(
 
 SECRET_KEY = config('SECRET_KEY')
 
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
